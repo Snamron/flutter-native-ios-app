@@ -36,23 +36,23 @@ void showDesertAlertDialog(BuildContext context) {
   showCupertinoDialog(
     context: context,
     builder: (BuildContext context) => CupertinoAlertDialog(
-          title: const Text("Like Old-Monk"),
-          actions: <Widget>[
-            CupertinoDialogAction(
-              child: const Text("Nope"),
-              isDestructiveAction: true,
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-            CupertinoDialogAction(
-              child: const Text("Absolutely!"),
-              isDefaultAction: true,
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
+      title: const Text("Like Old-Monk"),
+      actions: <Widget>[
+        CupertinoDialogAction(
+          child: const Text("Nope"),
+          isDestructiveAction: true,
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
+        CupertinoDialogAction(
+          child: const Text("Absolutely!"),
+          isDefaultAction: true,
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ],
+    ),
   );
 }
